@@ -1,0 +1,68 @@
+Question one
+How do I create a hidden file or folder? How do I display it in the CLI?
+
+
+ANSWER: 
+Let's suppose that the folder is on desktop directory under the name of task1. To hide this folder we follow the following steps:
+1. We write on terminal input inviroment using zsh, the command (chflags hidden)
+ 
+2. We drag the folder to terminal. 
+
+3. The application of this looks like this:
+hackyourfuture@Hacks-Air desktop % chflags hidden /Users/hackyourfuture/Desktop/task1
+
+
+As we notice, (hackyourfuture@Hacks-Air ) is the prompt. Desktop is the directory where we are putting task1. And the rest is the command. And /Users/hackyourfuture/Desktop/task1 is the file that we have dragged.
+4. Now the file is hidden. But we can access the file by using 
+Go form navbar, then we choose go to folder. On the screen we write the name of the folder.
+The application of this will look like:
+~/desktop/task1
+Now we can access our folder.
+ 
+To make our hidden file reappear again,
+1. We have to be in desktop directory on terminal
+2. We put this command (defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder) then the folder will appear on desktop.
+
+Please the answer of this question is referenced from different sources, but more importantly is:
+https://www.youtube.com/watch?v=MWuWkiIeXyo&t=109s
+
+
+  
+Question 2
+
+How do I create multiple nested directories, like /c/Users/myusername/these/folders/are/just/for/fun?
+ ANSWER:
+
+We use the command 
+
+mkdir -p parentdirecotry/child1/child2/child3......
+
+
+Let's suppose that we are in desktop directory and we want to create a folder with muliple nested directories as in the question.
+The application of this will look like:
+hackyourfuture@Hacks-Air desktop % mkdir -p c/Users/myusername/these/folders/are/just/for/fun 
+The we have completed the task. 
+ 
+
+
+Question 3
+
+How do I append a message to a file, without a newline character, so the output would be:
+first message
+second message 
+
+We use the command echo with tow time the mark of bigger than >> 
+Let's suppose that we have a file named test.txt. the file already have the first message.
+To write the second message below, we write the command:
+The application of this:
+We create a file text.txt in directory testing. We apply command echo using first > then using >> 
+
+hackyourfuture@Hacks-Air testing % touch text.txt
+hackyourfuture@Hacks-Air testing % echo first message > text.txt
+hackyourfuture@Hacks-Air testing % cat text.txt
+first message
+hackyourfuture@Hacks-Air testing % echo second message >> text.txt 
+hackyourfuture@Hacks-Air testing % cat text.txt
+first message
+second message
+hackyourfuture@Hacks-Air testing % 
