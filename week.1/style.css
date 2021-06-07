@@ -1,0 +1,315 @@
+
+
+/*
+working method: 
+
+using GRID ( Also another NESTED GRID within the primary grid), ABSOLUTE POSITION, FLEXBOX. 
+Please note: I nested another grid (section element) using the declaration of repeat(auto-fit, minmax(200px, 1fr)). the purpose is  to place gallery images and create 
+responsiveness.
+ALso i used (wrting mode: with vertical lr)  to create a special effect in the page.
+
+I established the elements  as divs from 1 to 9. And i wrap them all within a parent div (class="wrapper").
+
+(please note: i did not use the semantic 
+elements of header, nav, main, footer. i could have use them, and place them using grid template area. Rather i choose the method of placing 
+each element on specific palce using grid row property and grid column property as more direct way to distribute elements. and i am awere of the 
+the fact that brouwers are very sensitive to semantic element usage. i might apply grid template area property in future projects}
+*/
+
+
+
+
+
+
+/*
+
+I create a wrapper for the whole page and apply display:grid. and i apply background-image property. 
+I assigne background-attachment value as fixed, because i want the image to stay fixed even though we scroll down.*/
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 60px;
+    grid-template-rows: repeat(12, 200px);
+   width: 90vw;
+    background-image:url(justin.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+/*
+
+
+for  H1 through out the page, I tried to create some kind of consistemcy in the spirit of the page.
+ So all H1 will have the same properties*/
+
+
+h1 {
+    font-size: 40px; 
+    color: bisque;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0px 10px 20px rgba(0, 0, 0, .65);
+    transition: 2s ease-in-out;
+}
+h1:hover {
+    font-size: 70px;
+    color: rgb(181 145 97);
+}
+
+
+
+/* normal placement of element1 using grid method of grid row and grid column. 
+Also, I want ot place H1 on the bottom side of the element1, so i change poition of element1 into relative, and i 
+also assign position absolute to H1 and i reposition H1 to the bottom side. 
+This solution will applied for all elements where 
+H1 is needed to be positotned on the below side of the element.
+*/
+.element1 {
+    grid-row: 1/ 2;
+    grid-column: 1/ 2;
+    font-size: 20px;
+    min-height: 30vh;
+    width: 100%;
+    position: relative;
+    background-image: url(justin.jpg);
+    background-repeat: no-repeat;
+   background-position:center;
+    background-size: cover;
+    border-radius: 60px;
+    
+    
+}
+.element1>h1 {
+    position:absolute;
+    bottom: 10px;
+
+}
+
+/* element2 is about. i position this element using grid item child property*/
+.element2 {
+
+    font-size: 20px;
+    color: white;
+    font-family:limelight;
+    width:200px;
+    height: fit-content;
+    grid-row: 4/ 5;
+    grid-column: 1/ 4;
+    text-align: center;
+    
+} 
+
+
+
+.element2 p {
+    background-color: rgba(0,0,0, 50%);
+    box-shadow: 100px;
+    border-color: black;
+    margin-left: 20px;
+    box-shadow: 20px;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+
+
+/* 
+normal placement of element3/4/5  using grid method of grid row and grid column.
+elements  (3, 4, 5) we position in the middle of the page. we assign position relative to these elements in order to 
+position the inner p elements as abosolute positon so we can reposition p elements insode the div elements.
+ and in each p element we apply hover*/
+
+
+.element3 {
+    grid-row: 6/ 7;
+    grid-column: 4/ 5;
+    font-family: limelight;
+    position: relative;
+    background-image: url(justin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    border-bottom: solid;
+    border-color: black;
+  
+    
+}
+.work {
+    position: absolute;
+    color:white;
+    bottom: 2px;
+    left: 10px;
+    transition: 1s ease-in-out;
+    color:white;
+  
+} 
+/*  hover effect */
+ .work:hover {
+
+    font-size: 30px;
+    opacity: 1;
+    color:bisque;
+}
+
+.element4 {
+    grid-row: 7/ 8;
+    grid-column: 3/ 4;
+    font-family: limelight;
+    width:100%;
+    color:white;
+    position: relative;
+    background-image: url(justin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    border-bottom: solid;
+    border-color: black;
+}
+
+.EDUCATION {
+    position: absolute;
+    color:white;
+    bottom: 2px;
+    left: 10px;
+    transition: 1s ease-in-out;
+    color: white;
+  
+} 
+
+ .EDUCATION:hover {
+
+    font-size: 30px;
+    opacity: 1;
+    color:bisque;
+}
+
+
+
+
+.element5 {
+    grid-row: 8/ 9;
+    grid-column: 2/ 3;
+    font-family: limelight;
+    width:100%;
+    color:white;
+    position: relative;
+    background-image: url(justin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    border-bottom: solid;
+    border-color: black;
+}
+
+
+.activity {
+    position: absolute;
+    color:white;
+    bottom: 2px;
+    left: 10px;
+    transition: 1s ease-in-out;
+    color: white;
+  
+} 
+
+ .activity:hover {
+
+    font-size: 30px;
+    opacity: 1;
+    color:white;
+}
+
+/* normal placement of element6 using grid method of grid row and grid column.
+
+
+Also i used the property of wrting mode to change into vertical mode wrting*/ 
+
+.element6 {
+    grid-row: 1/ 6;
+    grid-column: 5/ 6;
+    writing-mode: vertical-lr;
+    font-family: limelight;
+    font-size: 30px;
+    margin:10px;
+    padding: 10px;
+   letter-spacing: 10px;
+    color: white;
+    width:100%;
+    text-align: right;
+
+}
+
+/* normal placement of element7 using grid method of grid row and grid column.
+Also, we use relative-absolute technique to repostion H1 in the lower side of element7*/ 
+
+.element7 {
+    position: relative;
+    grid-row: 10/ 11;
+    grid-column: 4/ 5;
+}
+.element7>h1 {
+    position: absolute;
+    font-family: limelight;
+    bottom:5px;
+
+
+}
+
+.element8 {
+    grid-row: 11/ 12;
+    grid-column: 1/ 5;
+    
+  
+
+}
+
+
+/*  
+
+I used the declaration repeat(auto-fit, minmax(200px, 1fr)) place 
+*/
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   
+}
+
+section>div {
+
+    width: 200;
+    height: 150px;
+    background-image: url(justin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    transition: 2s ease-in-out;
+
+}
+
+.element8 div:hover {
+    background-image: url(justin.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+   transform: rotate(360deg);
+   border-radius: 50%;
+
+}
+
+.element9 {
+grid-row: 13/ 14;
+grid-column: 1/ 5;
+font-size: 30px;
+color: white;
+
+}
+
+.list {
+
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
