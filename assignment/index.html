@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+</body>
+</html>
+
+<!-- Navigation bar. /* making navigation bar using flexbox. nav is parent container for h1 and ul. Also, making ul with class (nav-list) as a parent container for li items and apply flexbox" -->
+<nav>
+    <h1 class="logo">Sphinx</h1>
+    <ul class="nav-list">
+      <li class="nav-item"> <a href="#contact-customer"> contact </a> </li>
+      <li class="nav-item"> <a href="#yourplan-customer"> Your plan </a> </li>
+      <li class="nav-item"> <a href="#locations-customer"> locations </a> </li>
+    
+      <li class="nav-item login">Log in</li>
+    </ul>
+  </nav>
+<!-- create a background image with class (background) -->
+  <section class="background"></section>
+
+  <!--create a parent container with class (intro) and apply flexbox direction column -->
+    <section class="intro">
+      <h1>Living Museums of Antiquity</h1>
+
+      <!-- create a parent container with class (intro-row) with child items (col-image, col-text) and apply flexbox. Also reate a parent container with class (col-text) with child items (h3, p) and apply flexbox column-->
+        <div class="intro-row">
+          <div class="col-image">
+            <img src="https://drive.google.com/uc?id=1S99NtrhK9BQFsUq9cK2KloP6Ve-fAffl" alt="">
+          </div>
+          <div class="col-text">
+            <h3>Book your tour via <span> SPHINX </span>and dive with us into Archeology</h3>
+            <p>Sphinx is the agency that combines fun with culture, archeology and travel. Our mission to reconnect modern individuals with our human past, and to revitalize the nomadic spirit of the part to establish connection cross-cultures. We organize tours to the 6 most ancient landmarks of our human history. Our tours are organized based on demands and subscriptions. We organize group, family, corporate and scientific tours. Book your tour. To read more <strong> <a href=""> click here</a> </strong></p>
+          </div>
+        </div>
+    </section>
+
+    <section  id="locations-customer" class="locations-container">
+      <h1 class="locations-title"> locations </h1>
+        
+        <!-- create a parent container with class (locations) and apply flexbox to contain all images with associated h2, p with animation effect, the flex of every child, goes when hovering from 1 to 2.5  -->
+      
+      <div class="locations">   
+        <div class="location">
+          <h2> Petra, Jordan</h2>
+          <img src="https://www.pandotrip.com/wp-content/uploads/2018/05/Al-Khazneh-in-Petra-Jordan.jpg" alt="Petra">
+          <div class="caption">
+            <p>The majestic ancient monuments mark the glory of Ancient Egypt. Situated in the desert,
+              The complex includes the Great Pyramid of Giza, the world.<br>
+              <strong>Why go there?</strong> <br><button>Click Here</button>
+            </p>
+          </div>
+        </div>
+        <div class="location">
+          <h2> Rome, Italy</h2>
+          <img class="image-float" src="https://www.pandotrip.com/wp-content/uploads/2015/11/Top-Landmars-Forum-Photo-by-Andrey-Omelyanchuk.jpg" alt="The roman forum">
+          <div class="caption">
+            <p>The majestic ancient monuments mark the glory of Ancient Egypt. Situated in the desert,
+              The complex includes the Great Pyramid of Giza, the world.<br>
+              <strong>Why go there?</strong><br> <button>Click Here</button>
+            </p>
+          </div>
+        </div>
+     
+        <div class="location">
+          <h2> Moai Island</h2>
+          <img class="image-float" src="https://www.pandotrip.com/wp-content/uploads/2018/05/Ahu-Tongariki-the-largest-ahu-on-Easter-Island.jpg" alt="Moai">
+          <div class="caption">
+            <p>The majestic ancient monuments mark the glory of Ancient Egypt. Situated in the desert,
+              The complex includes the Great Pyramid of Giza, the world.<br>
+              <strong>Why go there?</strong><br> <button>Click Here</button>.
+            </p>
+          </div>
+        </div>
+        <div class="location">
+          <h2> Indonesia </h2>
+          <img class="image-float" src="https://www.pandotrip.com/wp-content/uploads/2018/05/Borobudur-Temple-at-Sunrise.jpg" alt="Borobudur, Magelang, Central Java, Indonesia">
+          <div class="caption">
+            <p>The majestic ancient monuments mark the glory of Ancient Egypt. Situated in the desert,
+              The complex includes the Great Pyramid of Giza, the world.<br>
+              <strong>Why go there?</strong> <br><button>Click Here</button>
+            </p>
+          </div>
+        </div>
+        <div class="location">
+          <h2> China </h2>
+          <img class="image-float" src="https://static.bangkokpost.com/media/content/20180808/c1_1518162.jpg" alt="The Great Wall of China">
+          <div class="caption">
+            <p>The majestic ancient monuments mark the glory of Ancient Egypt. Situated in the desert,
+              The complex includes the Great Pyramid of Giza, the world.<br>
+              <strong>Why go there?</strong><br> <button>Click Here</button>
+            </p>
+          </div>
+        </div>
+        <div class="location">
+          <h2> Pyramids, Egypt</h2>
+          <img class="image-float" src="https://www.pandotrip.com/wp-content/uploads/2018/03/The-Pyramids-of-Giza-and-The-Sphinx-Egypt.jpg" alt="Pyramids, Giza, Egypt">
+          <div class="caption">
+            <p>The majestic ancient monuments mark the glory of Ancient Egypt. Situated in the desert,
+              The complex includes the Great Pyramid of Giza, the world. <br>
+              <strong>Why go there?</strong> <br><button>Click Here</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- create a parent container with class (yourplan) and apply flexbox direction column -->
+    <section id="yourplan-customer" class="yourplan">
+      <h1> Your plan </h1>
+      <p> You can plan with us one of the above location. We launch the tour as soon as we got the proper number of customers. We also include in our programs some extra privilages based on customer subscription choice. for more information about these privilages, please see the table below</p>
+      
+      
+       <!-- create a parent container with class (plan-categories) and apply flexbox direction row -->
+      
+      <div class="plan-categories">
+        <table>
+          <thead>
+            <tr>
+              <th>privileges </th>
+              <th> Clssic </th>
+              <th> Silver </th>
+              <th> Gold </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> promotional prices</td>
+              <td> X</td>
+              <td> yes</td>
+              <td> yes </td>
+            </tr>
+            <tr>
+              <td> spa</td>
+              <td> X</td>
+              <td> X</td>
+              <td> yes </td>
+
+            </tr>
+            <tr>
+              <td> internet</td>
+              <td> yes</td>
+              <td> yes</td>
+              <td> yes </td>
+            </tr>
+            <tr>
+              <td> contact person</td>
+              <td> X</td>
+              <td> X</td>
+              <td> yes </td>
+            </tr>
+            <tr>
+              <td> child care </td>
+              <td> X</td>
+              <td> yes</td>
+              <td> yes </td>
+            </tr>
+            <tr>
+              <td> dinner </td>
+              <td> X</td>
+              <td> X</td>
+              <td> yes </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-image">
+          <img src="https://drive.google.com/uc?id=1ddsWX8O-3zwKSbzd4HUp-LnmwNQ1WyOT" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- create a parent continer with class (testimonials)-->
+    <div class="testimonials">
+      <h1> testimonials </h1>
+      
+      <!-- create a parent (class="row") and 3 child items  ( class="col") and apply flex to parent -->
+      <div class="row-testimonial">
+        <div class="col-testimonial">
+          
+          <!-- now  apply flex column to prent  (class="col-testimonial") -->
+         
+          
+
+          <img class="image-testimonials" src="https://i.pinimg.com/originals/64/bc/6b/64bc6b6656cf4fd5b1967d75420b6d46.jpg" alt="Lady Gaga">
+          <div class="name"> Lady Gaga </div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>"This is an awe inspiring place indeed. The camel ride is also not to be missed.
+            The only unpleasant part is the utter hounding by the hawkers there.
+            It is impossible to avoid them. Still, I would not let that aspect ruin
+            the amazing wonder of the Pyramid"
+          </p>
+        </div>
+        <div class="col-testimonial">
+          <img class="image-testimonials" src="https://i.pinimg.com/originals/64/bc/6b/64bc6b6656cf4fd5b1967d75420b6d46.jpg" alt="Justin Bieber">
+          <div class="name"> Justin Bieber </div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>"This is an awe inspiring place indeed. The camel ride is also not to be missed.
+            The only unpleasant part is the utter hounding by the hawkers there.
+            It is impossible to avoid them. Still, I would not let that aspect ruin
+            the amazing wonder of the Pyramids"
+          </p>
+        </div>
+        <div class="col-testimonial">
+          <img class="image-testimonials" src="https://i.pinimg.com/originals/64/bc/6b/64bc6b6656cf4fd5b1967d75420b6d46.jpg" alt="Opra">
+          <div class="name"> Opra </div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>"This is an awe inspiring place indeed. The camel ride is also not to be missed.
+            The only unpleasant part is the utter hounding by the hawkers there.
+            It is impossible to avoid them. Still, I would not let that aspect ruin
+            the amazing wonder of the Pyramids"
+          </p>
+        </div>
+      </div>
+    </div>
+
+<!-- FORM. create parent container (form) and flex column  -->
+<section class="enrolment">
+  <form id="contact-customer">
+    <h1>Sign Up</h1>
+    <div class="input">
+      <div class="form-input">
+        <label> Name </label>
+        <input type="text" placeholder="type your full name">
+      </div>
+      <div class="form-input">
+        <label> Email </label>
+        <input type=" email" placeholder="type your email address">
+      </div>
+      <div class="form-input">
+        <label> Password </label>
+        <input type="passward" placeholder="type your passward">
+      </div>
+    </div>
+    <button type="submit" value="Sign up ">Submit</button>
+  </form>
+</section>
+<section class="footer">
+  <h1 class="logo bottom">Sphinx &copy;</h1>
+  <ul class="footer-list">
+    <li class="footer-item"><img src="https://drive.google.com/uc?id=1zFPksCSuYQ7owrIaPejV3Uk9ShUI1aRG" alt=""></li>
+    <li><img src="https://drive.google.com/uc?id=1r_Hu3cmICylWVE4qY7qntdjfAn5EE-q8" alt=""></li>
+    <li><img src="https://drive.google.com/uc?id=1G-RZu2EJGwJ4R8hErminQEcc_oZiGkGt" alt=""></li>
+  </ul>
+  <div class="float-end"></div>
+</section>

@@ -1,0 +1,512 @@
+
+  /*font-family is Montserrat: for the whole page */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Pattaya&display=swap');
+
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  body {
+      width: 70%;
+      margin: auto;
+  }
+  
+  /* navigation bar using blexbox. nav is parent container for h1 and ul.*/
+  nav {
+    min-height: 10vh;  
+    z-index:1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  /*making ul with class (nav-list) as a parent container for li items and apply flexbox*/
+  .nav-list {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+  }
+  /*custamising li items and using the property of transtion*/
+  .nav-item {
+    text-transform: uppercase;
+      margin: 0 1rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+  
+  }
+  
+   .nav-item a {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    transition: .3s ease;
+    color: #551A8B;
+  }
+  
+  /* making LOGIN distinct in the navigationbar*/
+  .login {
+    background: rgba(181, 145, 97, .5);
+    padding: .4rem;
+    text-transform: capitalize;
+    color: #551A8B;
+  }
+    /*applying pseudo class to a and create hover effect*/
+  a:hover {
+    background: rgba(181, 145, 97, .5);
+  } 
+  /*applying pseudo class to login and create hover effect*/
+  .login:hover {
+    background: #551A8B;
+    color: rgb(181 145 97) ;
+  }
+  
+  .logo {
+      margin-left: 2rem;
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-family: 'Pattaya', sans-serif;
+      letter-spacing: .5rem;  
+      color: rgb(181, 145, 97);     
+  }
+  
+  /* Background image */
+  .background {
+      min-height: 30vh;
+      width: 100%;
+      margin: auto;
+      background-image: url("https://drive.google.com/uc?id=1kddDnvrY_7Cq53G0wG5dN11G3HekiicA");
+      background-repeat: no-repeat;
+     background-position:center;
+      background-size: cover;
+      box-shadow: 0px 10px 20px rgba(181, 145, 97,.8);
+  }
+  
+  /* flex column*/
+  .intro {
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .intro h1 {
+      font-size: 3.5rem;
+      letter-spacing: .2rem;  
+      color: rgb(181 145 97);
+      text-transform: uppercase;
+      width: 100%;
+      text-align: center;
+      padding: 3rem;
+      text-shadow: 0px 10px 20px rgba(0, 0, 0, .65);
+  }
+  /*flex row*/
+  .intro-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .col-image {
+    min-width: 50%;
+  }
+  .col-image img {
+    width: 80%;
+    margin: 2rem 2rem 3rem 2rem;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .8);  
+  }
+  /*flex direction column */
+  .col-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+  }
+  .intro h3 {
+      font-size: 1.8rem;
+      padding-left: 1rem;
+      text-align: center;
+      color: #551A8B;
+  }
+  
+  .intro h3 span {
+    color:rgb(181 145 97);
+    text-shadow: 0px 10px 20px black;
+  }
+  
+  .intro p {
+      font-size: 1.2rem;
+      text-align: justify;
+      line-height: 1.6;
+      padding: 1rem;
+      font-weight: 500;
+  }
+  
+  
+  /**the animation we mentioned in html, the opacity of the text when we hover, goes into 1*/
+  
+  /*Locations*/
+  .locations-container {
+    min-height: 100vh;
+  }
+  
+  .locations-title {
+    font-size: 3.5rem;
+      letter-spacing: .2rem;  
+      color: rgb(181 145 97);
+      text-transform: uppercase;
+      width: 100%;
+      text-align: center;
+      padding: 3rem;
+      text-shadow: 0px 10px 20px rgba(0, 0, 0, .65);
+  }
+  
+  .locations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(181 145 97);
+  }
+  
+  .locations img {
+    width: 100%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, .65);
+   
+  }
+  
+  .location {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 60vh;
+    box-sizing: border-box;
+    transition: .7s ease-in;
+    cursor: pointer;
+    
+  }
+  
+  
+  .location h2 {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 1rem 0rem;
+    color:rgba(181, 145, 97,1)
+  }
+  /* animation*/
+  .caption {
+    max-width: 20rem;
+    font-size: 1rem;
+    margin: 2rem 0;
+    line-height: 1.5;
+    display: none;
+    animation: opacity 2s;
+  }
+  
+  .caption p {
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  
+  .caption button {
+    border: 1px solid #fff;
+    border-radius: 30px;
+    background: rgba(181, 145, 97,.7);
+    outline: none;
+    padding: .5rem 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: pointer;
+    font: 1rem;
+  }
+  
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .location:hover{
+    flex: 2.5;
+    border: 1px solid rgb(181 145 97);
+    transition: 2s ease-in;
+  }
+  
+  .location:hover .caption{
+    display: block;
+    opacity: 1;
+  }
+  
+  /* flex direction column*/
+  .yourplan {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  
+  }
+  
+  .yourplan  h1 {
+    font-size: 3.5rem;
+    letter-spacing: .2rem;  
+    color: rgb(181 145 97);
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0px 10px 20px rgba(0, 0, 0, .65);
+  }
+  
+  .yourplan p {
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 1rem 2rem;
+    font-weight: 500;
+  }
+  /* flex direction row*/
+  .plan-categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  table {
+    width: 40%;
+   text-align: center;
+     font-weight: bold;
+      font-size: 1rem;
+    }
+  
+    thead {
+      border-radius: 50%;
+    }
+  
+    td {
+      width: 30%;
+      padding:5px;
+      background-color: rgba(181, 145, 97,.2);
+      padding: 1rem 3rem;
+    }
+  
+    td:nth-child(1) {
+      text-transform: uppercase;
+      font-size: bold;
+      background-color: rgba(181, 145, 97,.5);
+    }
+    
+   th {
+      background-color: rgb(181 145 97);
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 1rem 2rem;
+    }
+  .table-image {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .table-image img {
+    width: 80%;
+    filter: drop-shadow(0px 10px 20px rgb(0,0,0)); 
+    border-radius: 50%;
+    
+  }
+  
+  
+  
+  
+  
+  
+  /* Testemonials */
+  .testimonials {
+    min-height: 100vh;
+  }
+  
+  .testimonials h1 {
+    font-size: 3.5rem;
+    letter-spacing: .2rem;  
+    color: rgb(181 145 97);
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    padding: 3rem;
+    text-shadow: 0px 10px 20px rgba(0, 0, 0, .65);
+  }
+  /*flex row*/
+  .row-testimonial {
+    font-size:2rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  /*flex column*/
+  .col-testimonial { 
+    flex:1;  
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: justify;
+    max-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  
+  .image-testimonials{
+    width: 20%;
+    border-radius: 50%;
+    filter: drop-shadow(0px 10px 20px rgb(0,0,0)); 
+  }
+  
+  .name {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .stars {
+    color: rgb(181 145 97);
+    font-size: 1rem;
+    margin-bottom: .5rem;
+  }
+  
+  
+  .col-testimonial p {
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 1rem 2rem;
+    font-weight: 500;
+  }
+  /* Form */
+  .enrolment {
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.3), transparent), url("https://drive.google.com/uc?id=10hgjHdN5UjgLsA6pcrlcUIMte44fzFf8");
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*flex column*/
+  form {
+    display: flex;
+    font-size: 1.2rem;
+    color: rgb(181, 145, 97);
+    width: 50%;
+    min-height: 60vh;
+    background-color: rgba(0,0,0,.6);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
+    border: 2px solid rgba(181, 145, 97);
+    box-shadow: 10px 10px 30px rgba(0,0,0);
+  }
+  
+  
+  .enrolment h1 {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin: 2rem;
+  }
+  
+  form button {
+    margin-bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: rgba(181, 145, 97);
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    transition: .5s ease-in;
+    outline: none;
+    border: none;
+  }
+  
+  form button:hover {
+    background-color: transparent;
+    color: rgba(181, 145, 97);
+    outline: none;
+    border-top: solid 2px rgba(181, 145, 97);
+  }
+  
+  .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-input {
+   width: 100%;
+   text-align: right;
+   padding-bottom: 2rem;
+   
+  }
+  form label {
+    margin: 0rem 2rem;
+    font-weight: bold;
+  }
+  
+  form input {
+    padding: 1rem 2rem;
+    outline: none;
+    background-color: transparent; 
+    border: 1px solid rgb(181, 145, 97);
+    color: white;
+  }
+  
+  .footer {
+    min-height: 10vh;
+    background-color: rgba(181, 145, 97);
+  }
+  
+  .footer-list {
+    list-style: none;
+    float: right;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+  }
+  
+  .logo.bottom {
+     -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 0px 10px 20px black;
+    float: left;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    
+  }
+  
+  .footer img {
+    padding: 3rem 6rem 0rem 6rem;
+    cursor: pointer;
+    
+  }
+  .float-end {
+    clear: both;
+  }
+  
