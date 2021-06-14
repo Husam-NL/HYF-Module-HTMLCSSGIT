@@ -70,7 +70,7 @@ main section .grid-floats {
 /* apply float on UL where we have to apply float */
 main section .grid-floats li {
   float: left;
-  margin: 0.7rem 0.5rem;
+  margin: 0.7rem 0.2rem;
   width: 23%;
   height: 31.25rem;
   text-decoration: none;
@@ -109,7 +109,6 @@ main section .grid-floats li img {
 main section .grid-floats li:first-child {
   width: 46%;
   height: 31.25rem;
-  padding: 1.5em;
 }
 
 
